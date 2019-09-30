@@ -1,7 +1,7 @@
 // Mixins Here
 
 .border {
-    border: 1px dashed black;
+    // border: 1px dashed black;
 }
 
 .flex-row(@row; @justify; @align) {
@@ -11,12 +11,12 @@
     align-items: @align;
 }
 
-.sign-up-button (@width; @height){
+.sign-up-button (@width; @height; @line-height){
     width: @width; 
     height: @height; 
     text-align: center; 
     vertical-align: center; 
-    line-height: 33px; 
+    line-height: @line-height; 
     color: white; 
     font-size: 2rem; 
     background-color: #22283A;
