@@ -9,6 +9,8 @@
   <link href="https://fonts.googleapis.com/css?family=Russo+One|Ubuntu" rel="stylesheet">
   <link href="css/index.css" rel="stylesheet">
 
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
   <!--[if lt IE 9]>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.js"></script>
   <![endif]-->
@@ -16,16 +18,36 @@
 
 <body>
 
- <!-- navigation code here -->
+  <!-- navigation code here -->
+
+  <nav class="nav-header">
+    <nav class="nav-container">
+      <div class="text-logo">
+        <h1>SpaceWalkers</h1>
+      </div>
+      <nav>
+        <a href="index.html">Home</a>
+        <a href="about.html">About Us</a>
+        <a href="blog.html">Blog</a>
+        <a href="contact.html">Contact</a>
+        <a href="signin.html">Sign In</a>
+      </nav>
+    </nav>
+  </nav>
+  
 
   <div class="container home">
 
     <header class="intro">
-       <!-- image code here -->
+      <!-- image code here -->
+      <img src="img/main-header.png" class="header-img" alt="In orbit above the Earth">
+
+
 
       <h2>Lift Off</h2>
     
       <p>As we got further and further away, it [the Earth] diminished in size. Finally it shrank to the size of a marble, the most beautiful you can imagine. That beautiful, warm, living object looked so fragile, so delicate, that if you touched it with a finger it would fall apart. Seeing this has to change a man.</p>
+
     </header>
 
     <section class="space-images">
@@ -59,7 +81,30 @@
       <div class="walk-img">
           <img src="img/space-walk.png" alt="Space walking astronaut">
       </div>
+    </section>
 
+    <hr>
+
+    <section class="mag-sub">
+      <form action="/action_page.php">
+        <div class="mag-container">
+          <h2>Subscribe to our Magazine</h2>
+          <p>Lorem ipsum text about why you should subscribe to our newsletter blabla. Lorem ipsum text about why you
+            should subscribe to our newsletter blabla.</p>
+        </div>
+
+        <div class="mag-container" style="background-color:white">
+          <input type="text" placeholder="Name" name="name" required>
+          <input type="text" placeholder="Email address" name="mail" required>
+          <label>
+            <input type="checkbox" checked="checked" name="subscribe"> Monthly Magazine Subscription
+          </label>
+        </div>
+
+        <div class="mag-container">
+          <input type="submit" value="Subscribe">
+        </div>
+      </form>
     </section>
 
     <footer>
